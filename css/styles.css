@@ -29,3 +29,7 @@ body{
 .banner-right img{
     width:100% ;
 }
+.hover-effect:hover {
+    transform: scale(1.5) rotate(180deg);
+    transition: transform 4s ease-in-out;
+}
