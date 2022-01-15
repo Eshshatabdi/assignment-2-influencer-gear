@@ -70,7 +70,7 @@ h1{
 .blogs{
     width: 300px;
     padding: 30px;
-    box-shadow: 0 30px 35px hsl(0, 0%, 96%)}
+    box-shadow: 0 25px 30px hsl(0, 0%, 96%)}
 
 .blog-info i{
     color: rgb(255, 255, 0);
@@ -84,12 +84,21 @@ h1{
 /*-----------------
 main part complete---------
 ------------------ */
+
+
+
+
 /* extra section part start */
 .journey-part img{
     width: 100%;
     height: 400px;
     margin-bottom: 20px;
 }
+/* extra section part complete */
+
+
+
+
 /* Footer-part start */
 footer{
     text-align: center;
@@ -101,4 +110,35 @@ footer{
 
 
 /* footer complete */
+
+
+/* Media Queries */
+
+/* Mobile devices */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+       
+    }
+    
+    
+    .journey-part, .popular-collection-blogs {
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        
+       
+    }
+    
+
+}
+@media only screen and (min-width: 688px) and (max-width:992px){
+
+    .journey-part, .popular-collection-blogs{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    
+}
+    
+
 
